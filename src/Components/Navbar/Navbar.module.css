@@ -1,9 +1,17 @@
 .nav {
     grid-area: n;
     background: rgb(122,122,122);
-    background: linear-gradient(90deg, rgba(122,122,122,1) 48%, rgba(255,255,255,1) 83%);
+    padding: 20px;
 }
-.item {
+.item a {
     color: white;
     font-size: larger;
+    text-decoration: none;
+}
+.item a.active {
+    color: lawngreen;
+}
+.item img {
+    width: 35px;
+    border-radius: 35px;
 }
