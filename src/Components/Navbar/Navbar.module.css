@@ -11,7 +11,3 @@
 .item a.active {
     color: lawngreen;
 }
-.item img {
-    width: 35px;
-    border-radius: 35px;
-}

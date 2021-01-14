@@ -1,6 +1,7 @@
 import React from "react";
 import s from './Navbar.module.css';
 import {NavLink} from "react-router-dom";
+import Friends from "../Friends/Friends";
 
 const Navbar = (props) => {
     return <nav className={s.nav}>
@@ -26,13 +27,10 @@ const Navbar = (props) => {
             <br/>
         </div>
         <div className={s.item}>
-            <NavLink to='/friends' activeClassName={s.active}>Friends</NavLink>
+            <NavLink to='/friends' activeClassName={s.active}><h3>Friends</h3></NavLink>
         </div>
-        <div className={s.item}>
-            <img src='https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png'/>
-            <img src='https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png'/>
-            <img src='https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png'/>
-            {props.state.friends.name}
+        <div>
+            <Friends state={props.state.friends}/>
         </div>
     </nav>
 }
